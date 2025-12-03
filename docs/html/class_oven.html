@@ -1,0 +1,590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kitchen Project: Класс Oven</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Kitchen Project
+   </div>
+   <div id="projectbrief">Документация кода кухни</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_oven.html','','class_oven-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс Oven</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Духовка с профилем температуры и встроенным таймером.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aea8e905483af39d2b62c1e8a3739d793" id="r_aea8e905483af39d2b62c1e8a3739d793"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea8e905483af39d2b62c1e8a3739d793">Oven</a> (double t=0.0, bool o=false, bool d=true)</td></tr>
+<tr class="memdesc:aea8e905483af39d2b62c1e8a3739d793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор духовки.  <br /></td></tr>
+<tr class="memitem:ade45978f0458dec9253a505cb146be89" id="r_ade45978f0458dec9253a505cb146be89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade45978f0458dec9253a505cb146be89">preheat</a> (double t, int warmupMinutes=10)</td></tr>
+<tr class="memdesc:ade45978f0458dec9253a505cb146be89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Начинает разогрев духовки по профилю.  <br /></td></tr>
+<tr class="memitem:aa6a30fdc2d24cc38fac22f4005f6724f" id="r_aa6a30fdc2d24cc38fac22f4005f6724f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6a30fdc2d24cc38fac22f4005f6724f">turnOff</a> ()</td></tr>
+<tr class="memdesc:aa6a30fdc2d24cc38fac22f4005f6724f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выключает духовку и сбрасывает температуру.  <br /></td></tr>
+<tr class="memitem:ac7754b663e9ebb1b718bd2b3035842ff" id="r_ac7754b663e9ebb1b718bd2b3035842ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7754b663e9ebb1b718bd2b3035842ff">closeDoor</a> ()</td></tr>
+<tr class="memdesc:ac7754b663e9ebb1b718bd2b3035842ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Закрывает дверцу духовки.  <br /></td></tr>
+<tr class="memitem:a01564f9b1e71b9af95596600c13dd45b" id="r_a01564f9b1e71b9af95596600c13dd45b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01564f9b1e71b9af95596600c13dd45b">openDoor</a> ()</td></tr>
+<tr class="memdesc:a01564f9b1e71b9af95596600c13dd45b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Открывает дверцу духовки.  <br /></td></tr>
+<tr class="memitem:a56b20fc7a80a3f5cfcdb10dd61cc69cf" id="r_a56b20fc7a80a3f5cfcdb10dd61cc69cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56b20fc7a80a3f5cfcdb10dd61cc69cf">setTimerMinutes</a> (int minutes)</td></tr>
+<tr class="memdesc:a56b20fc7a80a3f5cfcdb10dd61cc69cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает таймер выпечки.  <br /></td></tr>
+<tr class="memitem:ad7c91f38e9f47ef7f40a185f0746933d" id="r_ad7c91f38e9f47ef7f40a185f0746933d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7c91f38e9f47ef7f40a185f0746933d">tick</a> (int secondsDelta)</td></tr>
+<tr class="memdesc:ad7c91f38e9f47ef7f40a185f0746933d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Продвигает время духовки.  <br /></td></tr>
+<tr class="memitem:aa54e5810fc8517e6a541665fed3fd9b5" id="r_aa54e5810fc8517e6a541665fed3fd9b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa54e5810fc8517e6a541665fed3fd9b5">isOn</a> () const</td></tr>
+<tr class="memdesc:aa54e5810fc8517e6a541665fed3fd9b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, включена ли духовка.  <br /></td></tr>
+<tr class="memitem:a91e5123d01cb862145f7b435880d72bc" id="r_a91e5123d01cb862145f7b435880d72bc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91e5123d01cb862145f7b435880d72bc">getTemperature</a> () const</td></tr>
+<tr class="memdesc:a91e5123d01cb862145f7b435880d72bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает текущую температуру духовки.  <br /></td></tr>
+<tr class="memitem:a4a5ae2457c39471606467029972d6511" id="r_a4a5ae2457c39471606467029972d6511"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a5ae2457c39471606467029972d6511">isDoorClosed</a> () const</td></tr>
+<tr class="memdesc:a4a5ae2457c39471606467029972d6511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, закрыта ли дверца духовки.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a8e7165c7e7cd9e0cc74f3329715d8135" id="r_a8e7165c7e7cd9e0cc74f3329715d8135"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e7165c7e7cd9e0cc74f3329715d8135">temperature</a></td></tr>
+<tr class="memdesc:a8e7165c7e7cd9e0cc74f3329715d8135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущая температура духовки.  <br /></td></tr>
+<tr class="memitem:a1edc7b79df19064dfed8202477ecdf46" id="r_a1edc7b79df19064dfed8202477ecdf46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1edc7b79df19064dfed8202477ecdf46">on</a></td></tr>
+<tr class="memdesc:a1edc7b79df19064dfed8202477ecdf46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак включённой духовки.  <br /></td></tr>
+<tr class="memitem:a40f22fdecff125c449cf06ccde2052bf" id="r_a40f22fdecff125c449cf06ccde2052bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40f22fdecff125c449cf06ccde2052bf">doorClosed</a></td></tr>
+<tr class="memdesc:a40f22fdecff125c449cf06ccde2052bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дверца закрыта.  <br /></td></tr>
+<tr class="memitem:adb3b97cb78ed6c74e974102b43e73869" id="r_adb3b97cb78ed6c74e974102b43e73869"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_timer.html">Timer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb3b97cb78ed6c74e974102b43e73869">bakingTimer</a></td></tr>
+<tr class="memdesc:adb3b97cb78ed6c74e974102b43e73869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Таймер выпечки.  <br /></td></tr>
+<tr class="memitem:a0fe94bbe491cec947eb3b1578949c674" id="r_a0fe94bbe491cec947eb3b1578949c674"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_temperature_profile.html">TemperatureProfile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fe94bbe491cec947eb3b1578949c674">profile</a></td></tr>
+<tr class="memdesc:a0fe94bbe491cec947eb3b1578949c674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Профиль нагрева.  <br /></td></tr>
+<tr class="memitem:a600b967d52e82d963163361a2984ba7e" id="r_a600b967d52e82d963163361a2984ba7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a600b967d52e82d963163361a2984ba7e">elapsedSeconds</a></td></tr>
+<tr class="memdesc:a600b967d52e82d963163361a2984ba7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сколько секунд прошло с начала нагрева.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Духовка с профилем температуры и встроенным таймером. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a> строка <a class="el" href="kitchen_8hpp_source.html#l00624">624</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="aea8e905483af39d2b62c1e8a3739d793" name="aea8e905483af39d2b62c1e8a3739d793"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea8e905483af39d2b62c1e8a3739d793">&#9670;&#160;</a></span>Oven()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Oven::Oven </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>t</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>o</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>d</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор духовки. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>Начальная температура. </td></tr>
+    <tr><td class="paramname">o</td><td>Признак включения. </td></tr>
+    <tr><td class="paramname">d</td><td>Состояние дверцы. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a> строка <a class="el" href="kitchen_8cpp_source.html#l00295">295</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="ac7754b663e9ebb1b718bd2b3035842ff" name="ac7754b663e9ebb1b718bd2b3035842ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7754b663e9ebb1b718bd2b3035842ff">&#9670;&#160;</a></span>closeDoor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Oven::closeDoor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Закрывает дверцу духовки. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a> строка <a class="el" href="kitchen_8cpp_source.html#l00324">324</a></p>
+
+</div>
+</div>
+<a id="a91e5123d01cb862145f7b435880d72bc" name="a91e5123d01cb862145f7b435880d72bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91e5123d01cb862145f7b435880d72bc">&#9670;&#160;</a></span>getTemperature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Oven::getTemperature </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает текущую температуру духовки. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Температура в градусах Цельсия. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a> строка <a class="el" href="kitchen_8cpp_source.html#l00357">357</a></p>
+
+</div>
+</div>
+<a id="a4a5ae2457c39471606467029972d6511" name="a4a5ae2457c39471606467029972d6511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a5ae2457c39471606467029972d6511">&#9670;&#160;</a></span>isDoorClosed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Oven::isDoorClosed </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет, закрыта ли дверца духовки. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если дверца закрыта. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a> строка <a class="el" href="kitchen_8cpp_source.html#l00361">361</a></p>
+
+</div>
+</div>
+<a id="aa54e5810fc8517e6a541665fed3fd9b5" name="aa54e5810fc8517e6a541665fed3fd9b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa54e5810fc8517e6a541665fed3fd9b5">&#9670;&#160;</a></span>isOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Oven::isOn </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет, включена ли духовка. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если духовка включена. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a> строка <a class="el" href="kitchen_8cpp_source.html#l00353">353</a></p>
+
+</div>
+</div>
+<a id="a01564f9b1e71b9af95596600c13dd45b" name="a01564f9b1e71b9af95596600c13dd45b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01564f9b1e71b9af95596600c13dd45b">&#9670;&#160;</a></span>openDoor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Oven::openDoor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Открывает дверцу духовки. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a> строка <a class="el" href="kitchen_8cpp_source.html#l00328">328</a></p>
+
+</div>
+</div>
+<a id="ade45978f0458dec9253a505cb146be89" name="ade45978f0458dec9253a505cb146be89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade45978f0458dec9253a505cb146be89">&#9670;&#160;</a></span>preheat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Oven::preheat </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>t</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>warmupMinutes</em></span><span class="paramdefsep"> = </span><span class="paramdefval">10</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Начинает разогрев духовки по профилю. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>Целевая температура. </td></tr>
+    <tr><td class="paramname">warmupMinutes</td><td>Длительность разогрева в минутах (&gt;0). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_invalid_temperature_exception.html" title="Исключение: некорректная температура духовки или условия нагрева.">InvalidTemperatureException</a></td><td>при некорректных параметрах. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a> строка <a class="el" href="kitchen_8cpp_source.html#l00303">303</a></p>
+
+</div>
+</div>
+<a id="a56b20fc7a80a3f5cfcdb10dd61cc69cf" name="a56b20fc7a80a3f5cfcdb10dd61cc69cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56b20fc7a80a3f5cfcdb10dd61cc69cf">&#9670;&#160;</a></span>setTimerMinutes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Oven::setTimerMinutes </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>minutes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Устанавливает таймер выпечки. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">minutes</td><td>Время в минутах (&gt;0). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_timer_not_set_exception.html" title="Исключение: не задан или задан неверно таймер.">TimerNotSetException</a></td><td>если minutes &lt;= 0. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a> строка <a class="el" href="kitchen_8cpp_source.html#l00332">332</a></p>
+
+</div>
+</div>
+<a id="ad7c91f38e9f47ef7f40a185f0746933d" name="ad7c91f38e9f47ef7f40a185f0746933d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7c91f38e9f47ef7f40a185f0746933d">&#9670;&#160;</a></span>tick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Oven::tick </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>secondsDelta</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Продвигает время духовки. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">secondsDelta</td><td>Приращение времени в секундах.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Обновляет температуру по профилю и состояние таймера. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a> строка <a class="el" href="kitchen_8cpp_source.html#l00339">339</a></p>
+
+</div>
+</div>
+<a id="aa6a30fdc2d24cc38fac22f4005f6724f" name="aa6a30fdc2d24cc38fac22f4005f6724f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6a30fdc2d24cc38fac22f4005f6724f">&#9670;&#160;</a></span>turnOff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Oven::turnOff </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выключает духовку и сбрасывает температуру. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a> строка <a class="el" href="kitchen_8cpp_source.html#l00319">319</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="adb3b97cb78ed6c74e974102b43e73869" name="adb3b97cb78ed6c74e974102b43e73869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb3b97cb78ed6c74e974102b43e73869">&#9670;&#160;</a></span>bakingTimer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_timer.html">Timer</a> Oven::bakingTimer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Таймер выпечки. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a> строка <a class="el" href="kitchen_8hpp_source.html#l00629">629</a></p>
+
+</div>
+</div>
+<a id="a40f22fdecff125c449cf06ccde2052bf" name="a40f22fdecff125c449cf06ccde2052bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40f22fdecff125c449cf06ccde2052bf">&#9670;&#160;</a></span>doorClosed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Oven::doorClosed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Дверца закрыта. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a> строка <a class="el" href="kitchen_8hpp_source.html#l00628">628</a></p>
+
+</div>
+</div>
+<a id="a600b967d52e82d963163361a2984ba7e" name="a600b967d52e82d963163361a2984ba7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a600b967d52e82d963163361a2984ba7e">&#9670;&#160;</a></span>elapsedSeconds</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Oven::elapsedSeconds</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сколько секунд прошло с начала нагрева. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a> строка <a class="el" href="kitchen_8hpp_source.html#l00631">631</a></p>
+
+</div>
+</div>
+<a id="a1edc7b79df19064dfed8202477ecdf46" name="a1edc7b79df19064dfed8202477ecdf46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1edc7b79df19064dfed8202477ecdf46">&#9670;&#160;</a></span>on</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Oven::on</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Признак включённой духовки. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a> строка <a class="el" href="kitchen_8hpp_source.html#l00627">627</a></p>
+
+</div>
+</div>
+<a id="a0fe94bbe491cec947eb3b1578949c674" name="a0fe94bbe491cec947eb3b1578949c674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fe94bbe491cec947eb3b1578949c674">&#9670;&#160;</a></span>profile</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_temperature_profile.html">TemperatureProfile</a> Oven::profile</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Профиль нагрева. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a> строка <a class="el" href="kitchen_8hpp_source.html#l00630">630</a></p>
+
+</div>
+</div>
+<a id="a8e7165c7e7cd9e0cc74f3329715d8135" name="a8e7165c7e7cd9e0cc74f3329715d8135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e7165c7e7cd9e0cc74f3329715d8135">&#9670;&#160;</a></span>temperature</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Oven::temperature</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Текущая температура духовки. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a> строка <a class="el" href="kitchen_8hpp_source.html#l00626">626</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>ppois_2/<a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a></li>
+<li>ppois_2/<a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_oven.html">Oven</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

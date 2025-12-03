@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kitchen Project: Класс Ingredient</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Kitchen Project
+   </div>
+   <div id="projectbrief">Документация кода кухни</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_ingredient.html','','class_ingredient-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс Ingredient</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Ингредиент с количеством, калорийностью и признаком скоропортимости.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a278371acf1ac7ec8d3ec8a2901d126dc" id="r_a278371acf1ac7ec8d3ec8a2901d126dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a278371acf1ac7ec8d3ec8a2901d126dc">Ingredient</a> (const char *n, const <a class="el" href="class_quantity.html">Quantity</a> &amp;q, double cal, bool per)</td></tr>
+<tr class="memdesc:a278371acf1ac7ec8d3ec8a2901d126dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор ингредиента.  <br /></td></tr>
+<tr class="memitem:a8a2ac032c7074c29dbf339e056829588" id="r_a8a2ac032c7074c29dbf339e056829588"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a2ac032c7074c29dbf339e056829588">addAmount</a> (double v)</td></tr>
+<tr class="memdesc:a8a2ac032c7074c29dbf339e056829588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляет массу к текущему количеству.  <br /></td></tr>
+<tr class="memitem:ab0c95ceea05a6087e9f0bf789877bb04" id="r_ab0c95ceea05a6087e9f0bf789877bb04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0c95ceea05a6087e9f0bf789877bb04">useAmount</a> (double vGrams)</td></tr>
+<tr class="memdesc:ab0c95ceea05a6087e9f0bf789877bb04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Использует часть ингредиента.  <br /></td></tr>
+<tr class="memitem:a05ecca1165a78292fffd0d7364617bc6" id="r_a05ecca1165a78292fffd0d7364617bc6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05ecca1165a78292fffd0d7364617bc6">isPerishable</a> () const</td></tr>
+<tr class="memdesc:a05ecca1165a78292fffd0d7364617bc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, является ли ингредиент скоропортящимся.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:ad732c517825fbec8e4b592e3a03f27ef" id="r_ad732c517825fbec8e4b592e3a03f27ef"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad732c517825fbec8e4b592e3a03f27ef">name</a></td></tr>
+<tr class="memdesc:ad732c517825fbec8e4b592e3a03f27ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название ингредиента.  <br /></td></tr>
+<tr class="memitem:a5830e4995bc23644ea9c1d168756f511" id="r_a5830e4995bc23644ea9c1d168756f511"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quantity.html">Quantity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5830e4995bc23644ea9c1d168756f511">quantity</a></td></tr>
+<tr class="memdesc:a5830e4995bc23644ea9c1d168756f511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество ингредиента.  <br /></td></tr>
+<tr class="memitem:a12ff6b479df03f374f433745db11e787" id="r_a12ff6b479df03f374f433745db11e787"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12ff6b479df03f374f433745db11e787">calories</a></td></tr>
+<tr class="memdesc:a12ff6b479df03f374f433745db11e787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Калорийность (на условную порцию).  <br /></td></tr>
+<tr class="memitem:a0aac097c1ae4898c2d2eec52747f38e9" id="r_a0aac097c1ae4898c2d2eec52747f38e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0aac097c1ae4898c2d2eec52747f38e9">perishable</a></td></tr>
+<tr class="memdesc:a0aac097c1ae4898c2d2eec52747f38e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак скоропортящегося продукта.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Ингредиент с количеством, калорийностью и признаком скоропортимости. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a> строка <a class="el" href="kitchen_8hpp_source.html#l00218">218</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a278371acf1ac7ec8d3ec8a2901d126dc" name="a278371acf1ac7ec8d3ec8a2901d126dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a278371acf1ac7ec8d3ec8a2901d126dc">&#9670;&#160;</a></span>Ingredient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ingredient::Ingredient </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>n</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_quantity.html">Quantity</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>q</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>cal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>per</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор ингредиента. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Название. </td></tr>
+    <tr><td class="paramname">q</td><td>Количество. </td></tr>
+    <tr><td class="paramname">cal</td><td>Калорийность. </td></tr>
+    <tr><td class="paramname">per</td><td>Признак скоропортимости. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a> строка <a class="el" href="kitchen_8cpp_source.html#l00047">47</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a8a2ac032c7074c29dbf339e056829588" name="a8a2ac032c7074c29dbf339e056829588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a2ac032c7074c29dbf339e056829588">&#9670;&#160;</a></span>addAmount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ingredient::addAmount </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>v</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавляет массу к текущему количеству. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>Масса в граммах, которую нужно добавить. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a> строка <a class="el" href="kitchen_8cpp_source.html#l00050">50</a></p>
+
+</div>
+</div>
+<a id="a05ecca1165a78292fffd0d7364617bc6" name="a05ecca1165a78292fffd0d7364617bc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05ecca1165a78292fffd0d7364617bc6">&#9670;&#160;</a></span>isPerishable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ingredient::isPerishable </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет, является ли ингредиент скоропортящимся. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если продукт perishable; иначе false. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a> строка <a class="el" href="kitchen_8cpp_source.html#l00070">70</a></p>
+
+</div>
+</div>
+<a id="ab0c95ceea05a6087e9f0bf789877bb04" name="ab0c95ceea05a6087e9f0bf789877bb04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0c95ceea05a6087e9f0bf789877bb04">&#9670;&#160;</a></span>useAmount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ingredient::useAmount </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>vGrams</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Использует часть ингредиента. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vGrams</td><td>Масса в граммах, которую нужно забрать. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_not_enough_ingredient_exception.html" title="Исключение: ингредиента недостаточно для операции.">NotEnoughIngredientException</a></td><td>если vGrams больше доступного количества. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a> строка <a class="el" href="kitchen_8cpp_source.html#l00059">59</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="a12ff6b479df03f374f433745db11e787" name="a12ff6b479df03f374f433745db11e787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12ff6b479df03f374f433745db11e787">&#9670;&#160;</a></span>calories</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Ingredient::calories</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Калорийность (на условную порцию). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a> строка <a class="el" href="kitchen_8hpp_source.html#l00222">222</a></p>
+
+</div>
+</div>
+<a id="ad732c517825fbec8e4b592e3a03f27ef" name="ad732c517825fbec8e4b592e3a03f27ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad732c517825fbec8e4b592e3a03f27ef">&#9670;&#160;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* Ingredient::name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Название ингредиента. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a> строка <a class="el" href="kitchen_8hpp_source.html#l00220">220</a></p>
+
+</div>
+</div>
+<a id="a0aac097c1ae4898c2d2eec52747f38e9" name="a0aac097c1ae4898c2d2eec52747f38e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aac097c1ae4898c2d2eec52747f38e9">&#9670;&#160;</a></span>perishable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ingredient::perishable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Признак скоропортящегося продукта. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a> строка <a class="el" href="kitchen_8hpp_source.html#l00223">223</a></p>
+
+</div>
+</div>
+<a id="a5830e4995bc23644ea9c1d168756f511" name="a5830e4995bc23644ea9c1d168756f511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5830e4995bc23644ea9c1d168756f511">&#9670;&#160;</a></span>quantity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_quantity.html">Quantity</a> Ingredient::quantity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Количество ингредиента. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a> строка <a class="el" href="kitchen_8hpp_source.html#l00221">221</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>ppois_2/<a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a></li>
+<li>ppois_2/<a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_ingredient.html">Ingredient</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

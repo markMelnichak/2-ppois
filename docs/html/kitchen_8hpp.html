@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kitchen Project: Файл ppois_2/kitchen.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Kitchen Project
+   </div>
+   <div id="projectbrief">Документация кода кухни</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('kitchen_8hpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Файл kitchen.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Модель кухни: ингредиенты, инструменты, плита, духовка, повар и набор блюд.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;iomanip&gt;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
+</div>
+<p><a href="kitchen_8hpp_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:IngredientNotFoundException" id="r_IngredientNotFoundException"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ingredient_not_found_exception.html">IngredientNotFoundException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Исключение: требуемый ингредиент отсутствует.  <a href="class_ingredient_not_found_exception.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:NotEnoughIngredientException" id="r_NotEnoughIngredientException"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_not_enough_ingredient_exception.html">NotEnoughIngredientException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Исключение: ингредиента недостаточно для операции.  <a href="class_not_enough_ingredient_exception.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:ToolNotAvailableException" id="r_ToolNotAvailableException"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tool_not_available_exception.html">ToolNotAvailableException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Исключение: кухонный инструмент недоступен или неисправен.  <a href="class_tool_not_available_exception.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:InvalidTemperatureException" id="r_InvalidTemperatureException"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_invalid_temperature_exception.html">InvalidTemperatureException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Исключение: некорректная температура духовки или условия нагрева.  <a href="class_invalid_temperature_exception.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:TimerNotSetException" id="r_TimerNotSetException"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timer_not_set_exception.html">TimerNotSetException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Исключение: не задан или задан неверно таймер.  <a href="class_timer_not_set_exception.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:OvercookedDishException" id="r_OvercookedDishException"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_overcooked_dish_exception.html">OvercookedDishException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Исключение: блюдо пережарено/переварено.  <a href="class_overcooked_dish_exception.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:UndercookedDishException" id="r_UndercookedDishException"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_undercooked_dish_exception.html">UndercookedDishException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Исключение: блюдо недоготовлено.  <a href="class_undercooked_dish_exception.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:StorageException" id="r_StorageException"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_storage_exception.html">StorageException</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Исключение: ошибка, связанная с хранением или единицей измерения.  <a href="class_storage_exception.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:Unit" id="r_Unit"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unit.html">Unit</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Единица измерения (граммы, литры, штуки и т.п.).  <a href="class_unit.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:Quantity" id="r_Quantity"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quantity.html">Quantity</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество продукта в определённой единице измерения.  <a href="class_quantity.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:Ingredient" id="r_Ingredient"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ingredient.html">Ingredient</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ингредиент с количеством, калорийностью и признаком скоропортимости.  <a href="class_ingredient.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:KitchenTool" id="r_KitchenTool"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kitchen_tool.html">KitchenTool</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый класс для кухонных инструментов (ножи, кастрюли, сковороды и т.д.).  <a href="class_kitchen_tool.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:Knife" id="r_Knife"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_knife.html">Knife</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нож — специализированный кухонный инструмент.  <a href="class_knife.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:CuttingBoard" id="r_CuttingBoard"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cutting_board.html">CuttingBoard</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разделочная доска.  <a href="class_cutting_board.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:Pan" id="r_Pan"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pan.html">Pan</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сковорода.  <a href="class_pan.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:Pot" id="r_Pot"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pot.html">Pot</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кастрюля.  <a href="class_pot.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:Timer" id="r_Timer"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_timer.html">Timer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Простой таймер с секундной точностью.  <a href="class_timer.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:Mixer" id="r_Mixer"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mixer.html">Mixer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Миксер — инструмент для смешивания ингредиентов.  <a href="class_mixer.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:PotatoMasher" id="r_PotatoMasher"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_potato_masher.html">PotatoMasher</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Толкушка для приготовления пюре.  <a href="class_potato_masher.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:TemperatureProfile" id="r_TemperatureProfile"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_temperature_profile.html">TemperatureProfile</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Профиль нагрева: начальная и целевая температура, длительность, режим.  <a href="class_temperature_profile.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:Oven" id="r_Oven"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_oven.html">Oven</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Духовка с профилем температуры и встроенным таймером.  <a href="class_oven.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:Stove" id="r_Stove"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_stove.html">Stove</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Плита с несколькими конфорками.  <a href="class_stove.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:Dish" id="r_Dish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dish.html">Dish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объявление повара для friend-связей  <a href="class_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:ChickenSoupDish" id="r_ChickenSoupDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_chicken_soup_dish.html">ChickenSoupDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: куриный суп.  <a href="class_chicken_soup_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:SaladDish" id="r_SaladDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_salad_dish.html">SaladDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: овощной салат.  <a href="class_salad_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:BakedMeatDish" id="r_BakedMeatDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_baked_meat_dish.html">BakedMeatDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: запечённое мясо.  <a href="class_baked_meat_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:PancakeDish" id="r_PancakeDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pancake_dish.html">PancakeDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: блины.  <a href="class_pancake_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:PastaDish" id="r_PastaDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pasta_dish.html">PastaDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: паста с соусом.  <a href="class_pasta_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:ScrambledEggsDish" id="r_ScrambledEggsDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scrambled_eggs_dish.html">ScrambledEggsDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: яичница.  <a href="class_scrambled_eggs_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:VegGrillDish" id="r_VegGrillDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_veg_grill_dish.html">VegGrillDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: овощи-гриль.  <a href="class_veg_grill_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:MeatStewDish" id="r_MeatStewDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_meat_stew_dish.html">MeatStewDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: мясное рагу.  <a href="class_meat_stew_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:SandwichDish" id="r_SandwichDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sandwich_dish.html">SandwichDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: сэндвич.  <a href="class_sandwich_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:CookieDish" id="r_CookieDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cookie_dish.html">CookieDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: печенье.  <a href="class_cookie_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:RiceDish" id="r_RiceDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rice_dish.html">RiceDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: варёный рис.  <a href="class_rice_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:BoiledEggDish" id="r_BoiledEggDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_boiled_egg_dish.html">BoiledEggDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: варёные яйца.  <a href="class_boiled_egg_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:MashedPotatoDish" id="r_MashedPotatoDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mashed_potato_dish.html">MashedPotatoDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: картофельное пюре.  <a href="class_mashed_potato_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:GrilledCheeseDish" id="r_GrilledCheeseDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grilled_cheese_dish.html">GrilledCheeseDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: горячий сырный сэндвич (grilled cheese).  <a href="class_grilled_cheese_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:FriedFishDish" id="r_FriedFishDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fried_fish_dish.html">FriedFishDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: жареная рыба.  <a href="class_fried_fish_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:FruitSaladDish" id="r_FruitSaladDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fruit_salad_dish.html">FruitSaladDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: фруктовый салат.  <a href="class_fruit_salad_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:PorridgeDish" id="r_PorridgeDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_porridge_dish.html">PorridgeDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: овсяная каша.  <a href="class_porridge_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:SteakDish" id="r_SteakDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_steak_dish.html">SteakDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: стейк.  <a href="class_steak_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:HotDogDish" id="r_HotDogDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hot_dog_dish.html">HotDogDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: хот-дог.  <a href="class_hot_dog_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:SauteedMushroomsDish" id="r_SauteedMushroomsDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sauteed_mushrooms_dish.html">SauteedMushroomsDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: обжаренные грибы.  <a href="class_sauteed_mushrooms_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:FriedPotatoDish" id="r_FriedPotatoDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fried_potato_dish.html">FriedPotatoDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: жареный картофель.  <a href="class_fried_potato_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:TomatoSoupDish" id="r_TomatoSoupDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tomato_soup_dish.html">TomatoSoupDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: томатный суп.  <a href="class_tomato_soup_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:VegOmeletteDish" id="r_VegOmeletteDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_veg_omelette_dish.html">VegOmeletteDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: овощной омлет.  <a href="class_veg_omelette_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:GarlicBreadDish" id="r_GarlicBreadDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_garlic_bread_dish.html">GarlicBreadDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: чесночный хлеб.  <a href="class_garlic_bread_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:SimpleSauceDish" id="r_SimpleSauceDish"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_sauce_dish.html">SimpleSauceDish</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блюдо: простой сливочный соус.  <a href="class_simple_sauce_dish.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:Cook" id="r_Cook"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cook.html">Cook</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повар, реализующий алгоритмы приготовления всех блюд.  <a href="class_cook.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:Menu" id="r_Menu"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu.html">Menu</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Меню, содержащее список доступных блюд.  <a href="class_menu.html#details">Подробнее...</a><br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Модель кухни: ингредиенты, инструменты, плита, духовка, повар и набор блюд. </p>
+<p>Заголовочный файл содержит объявления всех классов предметной области:</p><ul>
+<li>единицы измерения и количества продуктов;</li>
+<li>ингредиенты и кухонные инструменты;</li>
+<li>плита, духовка и профиль температуры;</li>
+<li>абстрактное блюдо и конкретные блюда;</li>
+<li>повар, который реализует алгоритмы приготовления;</li>
+<li>меню, позволяющее пользователю выбирать и готовить блюда. </li>
+</ul>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a></p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_89bb69133931383bf7c83fe8f21033e3.html">ppois_2</a></li><li class="navelem"><a href="kitchen_8hpp.html">kitchen.hpp</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

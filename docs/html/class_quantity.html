@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kitchen Project: Класс Quantity</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Kitchen Project
+   </div>
+   <div id="projectbrief">Документация кода кухни</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_quantity.html','','class_quantity-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс Quantity</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Количество продукта в определённой единице измерения.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ae6e64f6126ca08348f58be6f677b7828" id="r_ae6e64f6126ca08348f58be6f677b7828"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6e64f6126ca08348f58be6f677b7828">Quantity</a> (double v=0.0, <a class="el" href="class_unit.html">Unit</a> *u=nullptr, bool appr=false, int i=0)</td></tr>
+<tr class="memdesc:ae6e64f6126ca08348f58be6f677b7828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор количества.  <br /></td></tr>
+<tr class="memitem:a4310477345d60fd2efaf4efbe9e79cad" id="r_a4310477345d60fd2efaf4efbe9e79cad"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4310477345d60fd2efaf4efbe9e79cad">toGrams</a> () const</td></tr>
+<tr class="memdesc:a4310477345d60fd2efaf4efbe9e79cad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переводит количество в граммы.  <br /></td></tr>
+<tr class="memitem:ae29e0012e723829fd176d68ed9b01090" id="r_ae29e0012e723829fd176d68ed9b01090"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae29e0012e723829fd176d68ed9b01090">scale</a> (double factor)</td></tr>
+<tr class="memdesc:ae29e0012e723829fd176d68ed9b01090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Масштабирует значение на заданный множитель.  <br /></td></tr>
+<tr class="memitem:af9a7a0a89c535006be0396bd53910f6f" id="r_af9a7a0a89c535006be0396bd53910f6f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9a7a0a89c535006be0396bd53910f6f">isZero</a> () const</td></tr>
+<tr class="memdesc:af9a7a0a89c535006be0396bd53910f6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, является ли количество нулевым или отрицательным.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a831e22da60996d0db9e088d81eee490c" id="r_a831e22da60996d0db9e088d81eee490c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a831e22da60996d0db9e088d81eee490c">value</a></td></tr>
+<tr class="memdesc:a831e22da60996d0db9e088d81eee490c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Числовое значение количества.  <br /></td></tr>
+<tr class="memitem:a4e2dca40446aff395a0d4f77e06ad341" id="r_a4e2dca40446aff395a0d4f77e06ad341"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_unit.html">Unit</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e2dca40446aff395a0d4f77e06ad341">unit</a></td></tr>
+<tr class="memdesc:a4e2dca40446aff395a0d4f77e06ad341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Единица измерения.  <br /></td></tr>
+<tr class="memitem:ab40edc4559d04ecb90820e8aa66db9d6" id="r_ab40edc4559d04ecb90820e8aa66db9d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab40edc4559d04ecb90820e8aa66db9d6">approximate</a></td></tr>
+<tr class="memdesc:ab40edc4559d04ecb90820e8aa66db9d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак примерного значения.  <br /></td></tr>
+<tr class="memitem:af90614a641f8a6c079ff7b5e94410a25" id="r_af90614a641f8a6c079ff7b5e94410a25"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af90614a641f8a6c079ff7b5e94410a25">id</a></td></tr>
+<tr class="memdesc:af90614a641f8a6c079ff7b5e94410a25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификатор количества.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Количество продукта в определённой единице измерения. </p>
+<p>Хранит значение, ссылку на <a class="el" href="class_unit.html" title="Единица измерения (граммы, литры, штуки и т.п.).">Unit</a> и флаг примерности измерения. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a> строка <a class="el" href="kitchen_8hpp_source.html#l00177">177</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="ae6e64f6126ca08348f58be6f677b7828" name="ae6e64f6126ca08348f58be6f677b7828"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6e64f6126ca08348f58be6f677b7828">&#9670;&#160;</a></span>Quantity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Quantity::Quantity </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>v</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_unit.html">Unit</a> *</td>          <td class="paramname"><span class="paramname"><em>u</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>appr</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор количества. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>Числовое значение. </td></tr>
+    <tr><td class="paramname">u</td><td>Указатель на единицу измерения. </td></tr>
+    <tr><td class="paramname">appr</td><td>Флаг примерности значения. </td></tr>
+    <tr><td class="paramname">i</td><td>Идентификатор. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a> строка <a class="el" href="kitchen_8cpp_source.html#l00027">27</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="af9a7a0a89c535006be0396bd53910f6f" name="af9a7a0a89c535006be0396bd53910f6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9a7a0a89c535006be0396bd53910f6f">&#9670;&#160;</a></span>isZero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Quantity::isZero </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет, является ли количество нулевым или отрицательным. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если значение &lt;= 0; иначе false. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a> строка <a class="el" href="kitchen_8cpp_source.html#l00041">41</a></p>
+
+</div>
+</div>
+<a id="ae29e0012e723829fd176d68ed9b01090" name="ae29e0012e723829fd176d68ed9b01090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae29e0012e723829fd176d68ed9b01090">&#9670;&#160;</a></span>scale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Quantity::scale </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>factor</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Масштабирует значение на заданный множитель. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">factor</td><td>Множитель (&gt;0) для изменения количества. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a> строка <a class="el" href="kitchen_8cpp_source.html#l00037">37</a></p>
+
+</div>
+</div>
+<a id="a4310477345d60fd2efaf4efbe9e79cad" name="a4310477345d60fd2efaf4efbe9e79cad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4310477345d60fd2efaf4efbe9e79cad">&#9670;&#160;</a></span>toGrams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Quantity::toGrams </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Переводит количество в граммы. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_storage_exception.html" title="Исключение: ошибка, связанная с хранением или единицей измерения.">StorageException</a></td><td>если unit не задан. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Масса в граммах. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a> строка <a class="el" href="kitchen_8cpp_source.html#l00030">30</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="ab40edc4559d04ecb90820e8aa66db9d6" name="ab40edc4559d04ecb90820e8aa66db9d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab40edc4559d04ecb90820e8aa66db9d6">&#9670;&#160;</a></span>approximate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Quantity::approximate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Признак примерного значения. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a> строка <a class="el" href="kitchen_8hpp_source.html#l00181">181</a></p>
+
+</div>
+</div>
+<a id="af90614a641f8a6c079ff7b5e94410a25" name="af90614a641f8a6c079ff7b5e94410a25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af90614a641f8a6c079ff7b5e94410a25">&#9670;&#160;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Quantity::id</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Идентификатор количества. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a> строка <a class="el" href="kitchen_8hpp_source.html#l00182">182</a></p>
+
+</div>
+</div>
+<a id="a4e2dca40446aff395a0d4f77e06ad341" name="a4e2dca40446aff395a0d4f77e06ad341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e2dca40446aff395a0d4f77e06ad341">&#9670;&#160;</a></span>unit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_unit.html">Unit</a>* Quantity::unit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Единица измерения. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a> строка <a class="el" href="kitchen_8hpp_source.html#l00180">180</a></p>
+
+</div>
+</div>
+<a id="a831e22da60996d0db9e088d81eee490c" name="a831e22da60996d0db9e088d81eee490c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a831e22da60996d0db9e088d81eee490c">&#9670;&#160;</a></span>value</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Quantity::value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Числовое значение количества. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a> строка <a class="el" href="kitchen_8hpp_source.html#l00179">179</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>ppois_2/<a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a></li>
+<li>ppois_2/<a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_quantity.html">Quantity</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

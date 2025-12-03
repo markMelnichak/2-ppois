@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kitchen Project: Класс TemperatureProfile</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Kitchen Project
+   </div>
+   <div id="projectbrief">Документация кода кухни</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_temperature_profile.html','','class_temperature_profile-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Класс TemperatureProfile</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Профиль нагрева: начальная и целевая температура, длительность, режим.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a50694ca7c384f7b37b1f5a0f5deec00a" id="r_a50694ca7c384f7b37b1f5a0f5deec00a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50694ca7c384f7b37b1f5a0f5deec00a">TemperatureProfile</a> (double s=20.0, double t=180.0, int d=600, bool g=true)</td></tr>
+<tr class="memdesc:a50694ca7c384f7b37b1f5a0f5deec00a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор профиля температуры.  <br /></td></tr>
+<tr class="memitem:a25750f3bdf64ea39f12d11a5f944de45" id="r_a25750f3bdf64ea39f12d11a5f944de45"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25750f3bdf64ea39f12d11a5f944de45">currentTemp</a> (int elapsed) const</td></tr>
+<tr class="memdesc:a25750f3bdf64ea39f12d11a5f944de45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущая температура по истекшему времени.  <br /></td></tr>
+<tr class="memitem:a7bd0358942894dffdae5e4a24633210f" id="r_a7bd0358942894dffdae5e4a24633210f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bd0358942894dffdae5e4a24633210f">isReached</a> (double current) const</td></tr>
+<tr class="memdesc:a7bd0358942894dffdae5e4a24633210f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, достигнута ли целевая температура.  <br /></td></tr>
+<tr class="memitem:a39dc35a5611716c8cacca727e0f8ef7a" id="r_a39dc35a5611716c8cacca727e0f8ef7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39dc35a5611716c8cacca727e0f8ef7a">reset</a> (double s, double t, int d)</td></tr>
+<tr class="memdesc:a39dc35a5611716c8cacca727e0f8ef7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переопределяет профиль температуры.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:ac732024e5bcd14c731cd840afb1f9eb5" id="r_ac732024e5bcd14c731cd840afb1f9eb5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac732024e5bcd14c731cd840afb1f9eb5">startTemp</a></td></tr>
+<tr class="memdesc:ac732024e5bcd14c731cd840afb1f9eb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Начальная температура.  <br /></td></tr>
+<tr class="memitem:acde6fdc8819572d038261f16a2a00a46" id="r_acde6fdc8819572d038261f16a2a00a46"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acde6fdc8819572d038261f16a2a00a46">targetTemp</a></td></tr>
+<tr class="memdesc:acde6fdc8819572d038261f16a2a00a46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Целевая температура.  <br /></td></tr>
+<tr class="memitem:ab8df6698b223e0e7704210fbe483dd1e" id="r_ab8df6698b223e0e7704210fbe483dd1e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8df6698b223e0e7704210fbe483dd1e">duration</a></td></tr>
+<tr class="memdesc:ab8df6698b223e0e7704210fbe483dd1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Длительность нагрева в секундах.  <br /></td></tr>
+<tr class="memitem:a1798d11280ce4c9aee2e70365fafa6a3" id="r_a1798d11280ce4c9aee2e70365fafa6a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1798d11280ce4c9aee2e70365fafa6a3">gradual</a></td></tr>
+<tr class="memdesc:a1798d11280ce4c9aee2e70365fafa6a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Плавный ли нагрев.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Профиль нагрева: начальная и целевая температура, длительность, режим. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a> строка <a class="el" href="kitchen_8hpp_source.html#l00579">579</a></p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Конструктор(ы)</h2>
+<a id="a50694ca7c384f7b37b1f5a0f5deec00a" name="a50694ca7c384f7b37b1f5a0f5deec00a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50694ca7c384f7b37b1f5a0f5deec00a">&#9670;&#160;</a></span>TemperatureProfile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TemperatureProfile::TemperatureProfile </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>s</em></span><span class="paramdefsep"> = </span><span class="paramdefval">20.0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>t</em></span><span class="paramdefsep"> = </span><span class="paramdefval">180.0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>d</em></span><span class="paramdefsep"> = </span><span class="paramdefval">600</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>g</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор профиля температуры. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Начальная температура. </td></tr>
+    <tr><td class="paramname">t</td><td>Целевая температура. </td></tr>
+    <tr><td class="paramname">d</td><td>Длительность в секундах. </td></tr>
+    <tr><td class="paramname">g</td><td>Признак плавного нагрева. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a> строка <a class="el" href="kitchen_8cpp_source.html#l00272">272</a></p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Методы</h2>
+<a id="a25750f3bdf64ea39f12d11a5f944de45" name="a25750f3bdf64ea39f12d11a5f944de45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25750f3bdf64ea39f12d11a5f944de45">&#9670;&#160;</a></span>currentTemp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double TemperatureProfile::currentTemp </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>elapsed</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Текущая температура по истекшему времени. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elapsed</td><td>Прошедшее время в секундах. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Температура в текущий момент. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a> строка <a class="el" href="kitchen_8cpp_source.html#l00275">275</a></p>
+
+</div>
+</div>
+<a id="a7bd0358942894dffdae5e4a24633210f" name="a7bd0358942894dffdae5e4a24633210f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bd0358942894dffdae5e4a24633210f">&#9670;&#160;</a></span>isReached()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TemperatureProfile::isReached </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>current</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет, достигнута ли целевая температура. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">current</td><td>Текущая температура. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если current &gt;= targetTemp. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a> строка <a class="el" href="kitchen_8cpp_source.html#l00283">283</a></p>
+
+</div>
+</div>
+<a id="a39dc35a5611716c8cacca727e0f8ef7a" name="a39dc35a5611716c8cacca727e0f8ef7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39dc35a5611716c8cacca727e0f8ef7a">&#9670;&#160;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TemperatureProfile::reset </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>t</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>d</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Переопределяет профиль температуры. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Новая начальная температура. </td></tr>
+    <tr><td class="paramname">t</td><td>Новая целевая температура. </td></tr>
+    <tr><td class="paramname">d</td><td>Новая длительность. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a> строка <a class="el" href="kitchen_8cpp_source.html#l00287">287</a></p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Данные класса</h2>
+<a id="ab8df6698b223e0e7704210fbe483dd1e" name="ab8df6698b223e0e7704210fbe483dd1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8df6698b223e0e7704210fbe483dd1e">&#9670;&#160;</a></span>duration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TemperatureProfile::duration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Длительность нагрева в секундах. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a> строка <a class="el" href="kitchen_8hpp_source.html#l00583">583</a></p>
+
+</div>
+</div>
+<a id="a1798d11280ce4c9aee2e70365fafa6a3" name="a1798d11280ce4c9aee2e70365fafa6a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1798d11280ce4c9aee2e70365fafa6a3">&#9670;&#160;</a></span>gradual</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TemperatureProfile::gradual</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Плавный ли нагрев. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a> строка <a class="el" href="kitchen_8hpp_source.html#l00584">584</a></p>
+
+</div>
+</div>
+<a id="ac732024e5bcd14c731cd840afb1f9eb5" name="ac732024e5bcd14c731cd840afb1f9eb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac732024e5bcd14c731cd840afb1f9eb5">&#9670;&#160;</a></span>startTemp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double TemperatureProfile::startTemp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Начальная температура. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a> строка <a class="el" href="kitchen_8hpp_source.html#l00581">581</a></p>
+
+</div>
+</div>
+<a id="acde6fdc8819572d038261f16a2a00a46" name="acde6fdc8819572d038261f16a2a00a46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acde6fdc8819572d038261f16a2a00a46">&#9670;&#160;</a></span>targetTemp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double TemperatureProfile::targetTemp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Целевая температура. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a> строка <a class="el" href="kitchen_8hpp_source.html#l00582">582</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>ppois_2/<a class="el" href="kitchen_8hpp_source.html">kitchen.hpp</a></li>
+<li>ppois_2/<a class="el" href="kitchen_8cpp_source.html">kitchen.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_temperature_profile.html">TemperatureProfile</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>
